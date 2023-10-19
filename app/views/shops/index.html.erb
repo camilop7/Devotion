@@ -1,0 +1,11 @@
+<!-- FILEPATH: /Users/camilop/Desktop/Projects/Ruby/devotion/app/views/roasters/index.html.erb -->
+
+<h1>Shops</h1>
+
+<ul>
+  <% @shops.each do |shop| %>
+    <li><%= @shops.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "New shop", new_shop_path %>
