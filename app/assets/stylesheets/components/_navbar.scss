@@ -1,0 +1,24 @@
+.navbar-custom {
+  background-color: #ffffff; // Set your desired background color
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); // Light box shadow
+  padding-bottom: 18px; // Add 24px of bottom padding
+  padding-top: 18px; // Add 24px of top padding
+  position: sticky; // Set the navbar to stick to the top of the page
+
+  .nav-item {
+    margin: 0 10px; // Adjust spacing between nav items
+
+    .nav-link {
+      color: #000000; // Black text color
+      font-size: 18px; // Font size 18
+      text-decoration: none; // Remove underline from links
+      list-style: none; // Remove the dots
+    }
+  }
+
+  // Additional styles for centering the items
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

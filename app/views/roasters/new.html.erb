@@ -1,0 +1,22 @@
+<!-- FILEPATH: /Users/camilop/Desktop/Projects/Ruby/devotion/app/views/roasters/new.html.erb -->
+
+<h1>New Roaster</h1>
+
+<%= form_for @roaster, html: { multipart: true } do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :origin %>
+    <%= f.text_field :origin %>
+  </div>
+
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

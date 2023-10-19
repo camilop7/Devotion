@@ -1,0 +1,19 @@
+.footer {
+  background-color: #ffffff; // Set your desired background color
+  padding: 20px; // Adjust padding as needed
+  text-align: center;
+
+  bottom: 0;
+
+}
+
+.social-icons {
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px; // Adjust spacing between icons
+    img {
+      width: 30px; // Adjust the size of the icons
+      height: 30px; // Adjust the size of the icons
+    }
+  }
+}
