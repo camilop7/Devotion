@@ -1,14 +1,46 @@
-<%= render "shared/navbar" %>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>My landing page</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <!-- for responsiveness! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  </head>
+  <body>
 
-<div class="background" style="background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1695482480/IMG_0425_xtbfav.heic');">
-    <div class="container">
-    <div class="row">
-      <!-- 👍 -->
-      <div class="col-6">
-        <div class="card bg-light">
-          😀
+    <!-- Navbar -->
+    <%= render "shared/navbar" %>
+
+    <div class="cards-container">
+      <!-- Cards -->
+      <div class="cards">
+
+        <div class="card">
+          <%= render "shared/product-card" %>
         </div>
+
+        <div class="card">
+          <%= render "shared/product-card" %>
+        </div>
+
+        <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/paris)">
+          Paris
+        </div>
+
+        <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/london)">
+          London
+        </div>
+
+        <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/melbourne)">
+          Melbourne
+        </div>
+
+        <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/marseille)">
+          Marseille
+        </div>
+
       </div>
     </div>
-    </div>
-</div>
+  </body>
+</html>

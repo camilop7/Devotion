@@ -1,23 +1,27 @@
 .navbar-custom {
-  background-color: #ffffff; // Set your desired background color
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
   border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); // Light box shadow
-  padding-bottom: 18px; // Add 24px of bottom padding
-  padding-top: 18px; // Add 24px of top padding
-  position: sticky; // Set the navbar to stick to the top of the page
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 18px 0;
+  z-index: 999; /* Ensure it's on top of other elements */
+}
 
-  .nav-item {
-    margin: 0 10px; // Adjust spacing between nav items
+.nav-item {
+  margin: 0 10px;
+}
 
-    .nav-link {
-      color: #000000; // Black text color
-      font-size: 18px; // Font size 18
-      text-decoration: none; // Remove underline from links
-      list-style: none; // Remove the dots
-    }
-  }
+.nav-link {
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  list-style: none;
+}
 
-  // Additional styles for centering the items
+.display-flex {
   display: flex;
   justify-content: center;
   align-items: center;
