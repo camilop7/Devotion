@@ -97,3 +97,4 @@ yarn-debug.log*
 !/storage/.keep
 /public/uploads
 >>>>>>> 3b1fe46ade18142e0d907b49f9786e5921705dd1
+.env*

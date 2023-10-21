@@ -1,24 +1,22 @@
 .navbar-custom {
-  position: fixed;
+  position: sticky; /* Set the navbar to fixed position */
+  background-image: linear-gradient(to right, #ffffff, #d2a887); /* Transition from white to light brown */
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 18px 0;
-  z-index: 999; /* Ensure it's on top of other elements */
 }
 
 .nav-item {
-  margin: 0 10px;
+  margin: 0 24px;
 }
 
 .nav-link {
   color: #000000;
   font-size: 18px;
-  text-decoration: none;
-  list-style: none;
+  font-weight: bold;
 }
 
 .display-flex {
