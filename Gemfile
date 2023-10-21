@@ -24,7 +24,7 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
-gem "dotenv-rails"
+gem "dotenv-rails", groups: %i[ development test ]
 
 gem 'bootstrap', '~> 5.2'
 
