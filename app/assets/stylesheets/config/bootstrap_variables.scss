@@ -1,9 +1,27 @@
-// $font-family-sans-serif:  $body-font;
-// $headings-font-family:    $headers-font;
+// Override Bootstrap variables
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headers-font;
+$primary: $black;
+$success: $green;
 
-// $primary: $black;
-// $success: $green;
+$custom-colors: (
+  "custom-color": $custom-color
+);
 
-// $custom-colors: (
-//   "custom-color": $custom-color
-// );
+// Add custom styles for the navbar
+.navbar-custom {
+  background-image: linear-gradient(to right, #d2a887, #7d5412); /* Transition from light brown to dark brown */
+}
+
+.navbar-custom .navbar-brand {
+  color: #000000; /* Set text color to black */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #000000; /* Set text color to black */
+  padding: 0.5rem 1rem;
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+  font-weight: bold; /* Make the active link bold */
+}
