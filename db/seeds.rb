@@ -19,3 +19,5 @@ Shop.create(name: 'Shop3', location: 'Location3', description: 'Description3', a
 Farmer.create(name: 'Farmer1', origin: 'Origin1', description: 'Description1', additional_info: 'Info1', picture: 'farmer1 .jpg')
 Farmer.create(name: 'Farmer2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'farmer2.jpg')
 Farmer.create(name: 'Farmer3', origin: 'Origin3', description: 'Description3', additional_info: 'Info3', picture: 'farmer3.jpg')
+
+User.create(email: 'camilo@camilo.com',)
