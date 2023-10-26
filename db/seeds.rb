@@ -15,9 +15,9 @@ Roaster.create(name: 'Roaster1', origin: 'Origin1', description: 'Description1',
 Roaster.create(name: 'Roaster2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1695482493/IMG_5227_ckanmz.jpg')
 Roaster.create(name: 'Roaster3', origin: 'Origin3', description: 'Description3', additional_info: 'Info3', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1695482492/IMG_5208_qitllm.jpg')
 
-Shop.create(name: 'Shop1', location: 'Location1', description: 'Description1', additional_info: 'Info1', picture: 'shop1.jpg')
-Shop.create(name: 'Shop2', location: 'Location2', description: 'Description2', additional_info: 'Info2', picture: 'shop2.jpg')
-Shop.create(name: 'Shop3', location: 'Location3', description: 'Description3', additional_info: 'Info3', picture: 'shop3.jpg')
+Shop.create(name: 'Shop1', location: 'Location1', description: 'Description1', additional_info: 'Info1', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1695482492/IMG_5117_jhf5xe.jpg')
+Shop.create(name: 'Shop2', location: 'Location2', description: 'Description2', additional_info: 'Info2', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1695482494/PHOTO-2023-09-23-16-05-13-4_g4sito.jpg?_s=public-apps')
+Shop.create(name: 'Shop3', location: 'Location3', description: 'Description3', additional_info: 'Info3', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1695482492/IMG_5117_jhf5xe.jpg?_s=public-apps')
 
 Farmer.create(name: 'Farmer1', origin: 'Origin1', description: 'Description1', additional_info: 'Info1', picture: 'farmer1 .jpg')
 Farmer.create(name: 'Farmer2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'farmer2.jpg')
