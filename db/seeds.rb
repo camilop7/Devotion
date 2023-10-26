@@ -8,9 +8,12 @@
 
 
 # db/seeds.rb
-Roaster.create(name: 'Roaster1', origin: 'Origin1', description: 'Description1', additional_info: 'Info1', picture: 'roaster1.jpg')
-Roaster.create(name: 'Roaster2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'roaster2.jpg')
-Roaster.create(name: 'Roaster3', origin: 'Origin3', description: 'Description3', additional_info: 'Info3', picture: 'roaster2.jpg')
+# User.create(email: 'camilo@camilo.com')
+
+
+Roaster.create(name: 'Roaster1', origin: 'Origin1', description: 'Description1', additional_info: 'Info1', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694978991/IMG_5193_w5p6tq.jpg')
+Roaster.create(name: 'Roaster2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1695482493/IMG_5227_ckanmz.jpg')
+Roaster.create(name: 'Roaster3', origin: 'Origin3', description: 'Description3', additional_info: 'Info3', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1695482492/IMG_5208_qitllm.jpg')
 
 Shop.create(name: 'Shop1', location: 'Location1', description: 'Description1', additional_info: 'Info1', picture: 'shop1.jpg')
 Shop.create(name: 'Shop2', location: 'Location2', description: 'Description2', additional_info: 'Info2', picture: 'shop2.jpg')
@@ -20,4 +23,5 @@ Farmer.create(name: 'Farmer1', origin: 'Origin1', description: 'Description1', a
 Farmer.create(name: 'Farmer2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'farmer2.jpg')
 Farmer.create(name: 'Farmer3', origin: 'Origin3', description: 'Description3', additional_info: 'Info3', picture: 'farmer3.jpg')
 
-User.create(email: 'camilo@camilo.com',)
+
+puts "Succesfully seeded!"
