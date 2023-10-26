@@ -3,26 +3,22 @@
 <div class="container">
   <h1>Roasters</h1>
 
-  <div class="row">
-    <% @roasters.each do |roaster| %>
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
-          <%= link_to roaster_path(roaster) do %>
-            <% if roaster.picture.present? %>
-              <%= image_tag roaster.picture, class: "card-img-top", alt: roaster.name %>
-            <% else %>
-              <!-- Provide a placeholder or default image if no picture is available -->
-              <%= image_tag "roaster1.jpg", class: "card-img-top", alt: roaster.name %>
+    <div class="row">
+      <% @roasters.each do |roaster| %>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <%= link_to roaster_path(roaster) do %>
+              <%= image_tag(roaster.picture, class: "card-img-top", alt: roaster.name) if roaster.picture.present? %>
             <% end %>
-          <% end %>
-          <div class="card-body">
-            <h5 class="card-title"><%= roaster.name %></h5>
-            <p class="card-text"><%= roaster.description %></p>
+            <div class="card-body">
+              <h5 class="card-title"><%= roaster.name %></h5>
+              <p class="card-text"><%= roaster.description %></p>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
-  </div>
+      <% end %>
+    </div>
+
 
   <%= link_to "New Roaster", new_roaster_path %>
 
