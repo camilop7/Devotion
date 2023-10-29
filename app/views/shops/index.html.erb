@@ -8,7 +8,11 @@
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
           <div class="card">
             <%= link_to shop_path(shop) do %>
-              <%= image_tag(shop.picture, class: "card-img-top", alt: shop.name) if shop.picture.present? %>
+              <% if shop.picture.present? %>
+                <%= image_tag(shop.picture, class: "card-img-top", alt: shop.name, style: "height: 400px; width: 100%; object-fit: cover;") %>
+              <% else %>
+                <%= image_tag("default_shop_image.jpg", class: "card-img-top", alt: shop.name, style: "height: 560px; width: 100%; object-fit: cover;") %>
+              <% end %>
             <% end %>
             <div class="card-body">
               <h5 class="card-title"><%= shop.name %></h5>
@@ -23,5 +27,4 @@
   <%= link_to "New Shop", new_shop_path %>
 
   <%= render "shared/footer" %>
-
 </div>

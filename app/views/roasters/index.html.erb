@@ -8,7 +8,11 @@
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
           <div class="card">
             <%= link_to roaster_path(roaster) do %>
-              <%= image_tag(roaster.picture, class: "card-img-top", alt: roaster.name) if roaster.picture.present? %>
+              <% if roaster.picture.present? %>
+                <%= image_tag(roaster.picture, class: "card-img-top", alt: roaster.name, style: "height: 400px; width: 100%; object-fit: cover;") %>
+              <% else %>
+                <%= image_tag("default_roaster_image.jpg", class: "card-img-top", alt: roaster.name, width: 414, height: 276) %>
+              <% end %>
             <% end %>
             <div class="card-body">
               <h5 class="card-title"><%= roaster.name %></h5>
@@ -18,6 +22,7 @@
         </div>
       <% end %>
     </div>
+
 
 
   <%= link_to "New Roaster", new_roaster_path %>

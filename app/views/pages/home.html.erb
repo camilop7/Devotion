@@ -4,56 +4,71 @@
     <meta charset="UTF-8">
   <title>Devotion Speciallity Coffee</title>
   <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
-  <!-- for responsiveness! -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   </head>
   <body>
 
-    <!-- Navbar -->
     <%= render "shared/navbar" %>
+
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-img-top bg-image position-relative" style="background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1695482490/IMG_3723_auprlk.jpg'); background-size: cover; height: 560px;">
+          <h5 class="card-title position-absolute start-0 top-0 p-2 text-light bg-dark">The Angel Shop</h5>
+        </div>
+        <div class="card-body">
+          <div class="card-footer">
+            <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="<%= shops_path %>" class="btn btn-primary position-absolute bottom-0 end-0 mb-2 me-4">Visit Shop</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container mt-4">
       <div class="row">
-        <!-- Existing Cards -->
-        <% 6.times do %>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <% 12.times do %>
+          <div class="col-12 col-md-4 mb-4">
             <div class="card">
-              <%= render "shared/product-card" %>
+              <div class="card-trip position-relative">
+                <%= image_tag("https://res.cloudinary.com/difj9msh3/image/upload/v1695482503/IMG_5134_derpfl.jpg", class: "card-img-top", alt: "Product Image", style: "max-height: 520px; width: 100%; margin-bottom: 10px;") %>
+
+                <div data-controller="favorite-heart" data-action="click->favorite-heart#toggleFavorite">
+                  <%= link_to '#', class: 'favorite-heart' do %>
+                    <i class="fa fa-heart-o" data-target="favorite-heart.heartIcon"></i>
+                  <% end %>
+                </div>
+
+                <div class="card-trip-infos">
+                  <div>
+                    <%= link_to "Gardelli", "#", class: "card-title", style: "text-decoration: none;" %>
+                    <p>Forlì FC, Italy</p>
+                  </div>
+                  <h2 class="card-trip-pricing">£19 (250gr)</h2>
+                </div>
+              </div>
             </div>
           </div>
         <% end %>
 
-        <div class="col-12 mb-4">
-          <div class="card">
-            <div class="card-img-top bg-image position-relative" style="background-image: url('https://images.unsplash.com/photo-1522787345986-d5c7885a889e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1300&amp;q=80'); height: 200px; opacity: 0.7;">
-              <h5 class="card-title position-absolute start-0 top-0 p-2 text-light bg-dark">The Angel Shop</h5>
-            </div>
-            <div class="card-body">
-              <div class="card-footer">
-                <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <a href="<%= shops_path %>" class="btn btn-primary position-absolute bottom-0 end-0 mb-2 me-4">Visit Shop</a>
-              </div>
+      <div class="col-12 mb-4">
+        <div class="card">
+          <div class="card-img-top bg-image position-relative" style="background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1694979769/sanremo_ugotxs.jpg'); background-size: cover; height: 620px;">
+            <h5 class="card-title position-absolute start-0 top-0 p-2 text-light bg-dark">The Angel Shop</h5>
+          </div>
+          <div class="card-body">
+            <div class="card-footer">
+              <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <a href="<%= shops_path %>" class="btn btn-primary position-absolute bottom-0 end-0 mb-2 me-4">Visit Shop</a>
             </div>
           </div>
         </div>
-
-                <div class="col-12 mb-4">
-          <div class="card">
-            <div class="card-img-top bg-image position-relative" style="background-image: url('https://images.unsplash.com/photo-1522787345986-d5c7885a889e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1300&amp;q=80'); height: 200px; opacity: 0.7;">
-              <h5 class="card-title position-absolute start-0 top-0 p-2 text-light bg-dark">The Angel Shop</h5>
-            </div>
-            <div class="card-body">
-              <div class="card-footer">
-                <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <a href="<%= farmers_path %>" class="btn btn-primary position-absolute bottom-0 end-0 mb-2 me-4">Visit Shop</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+
     </div>
+</div>
+
 
     <%= render "shared/footer" %>
 

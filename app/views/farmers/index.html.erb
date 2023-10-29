@@ -1,12 +1,27 @@
-
 <%= render "shared/navbar" %>
 
-<h1>Farmers</h1>
+<div class="container">
+  <h1>Farmers</h1>
 
-<ul>
-  <% @farmers.each do |farmer| %>
-    <li><%= @farmers.name %></li>
-  <% end %>
-</ul>
+    <div class="row">
+      <% @farmers.each do |farmer| %>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <%= link_to farmer_path(farmer) do %>
+              <%= image_tag(farmer.picture, class: "card-img-top", alt: farmer.name) if farmer.picture.present? %>
+            <% end %>
+            <div class="card-body">
+              <h5 class="card-title"><%= farmer.name %></h5>
+              <p class="card-text"><%= farmer.description %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
-<%= link_to "New farmer", new_farmer_path %>
+
+  <%= link_to "New Farmer", new_farmer_path %>
+
+  <%= render "shared/footer" %>
+
+</div>
