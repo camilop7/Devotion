@@ -29,6 +29,11 @@ Shop.create(name: 'Virtual Shop', location: 'Location3', description: 'Descripti
 Farmer.create(name: 'Farmer1', origin: 'Origin1', description: 'Description1', additional_info: 'Info1', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
 Farmer.create(name: 'Farmer2', origin: 'Origin2', description: 'Description2', additional_info: 'Info2', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
 Farmer.create(name: 'Farmer3', origin: 'Origin3', description: 'Description3', additional_info: 'Info3', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
-
+Farmer.create(name: 'Farmer4', origin: 'Origin4', description: 'Description3', additional_info: 'Info4', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
+Farmer.create(name: 'Farmer5', origin: 'Origin5', description: 'Description4', additional_info: 'Info5', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
+Farmer.create(name: 'Farmer6', origin: 'Origin6', description: 'Description5', additional_info: 'Info6', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
+Farmer.create(name: 'Farmer7', origin: 'Origin7', description: 'Description6', additional_info: 'Info7', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
+Farmer.create(name: 'Farmer8', origin: 'Origin8', description: 'Description7', additional_info: 'Info8', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
+Farmer.create(name: 'Farmer9', origin: 'Origin9', description: 'Description8', additional_info: 'Info9', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg')
 
 puts "Succesfully seeded!"
