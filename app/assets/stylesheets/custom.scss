@@ -1,0 +1,26 @@
+// Import Bootstrap and your other styles
+@import 'bootstrap';
+
+// Override Bootstrap variables here
+$navbar-fixed-top: true;
+$footer-fixed-bottom: true;
+
+.navbar {
+  padding: 15px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: azure;
+}
+
+
+.footer {
+  padding: 15px;
+  position: sticky;
+  width: 100%;
+  background-color: azure;
+}
+
+
+// Adjust content margin
