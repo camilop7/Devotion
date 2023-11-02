@@ -6,6 +6,13 @@ class RoastersController < ApplicationController
   end
 
   def show
+    @roaster = Roaster.find(params[:id])
+    @products = @roaster.products
+  end
+
+
+  def home
+    @roasters = Roaster.all
   end
 
   def new
