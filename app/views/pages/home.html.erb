@@ -11,32 +11,7 @@
 
     <%= render "shared/navbar" %>
 
-    <div class="container mt-5">
-      <div class="container mt-4">
-        <div class="row">
-          <% 12.times do %>
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card">
-              <div class="card-trip position-relative">
-                <%= image_tag("https://res.cloudinary.com/difj9msh3/image/upload/v1695482503/IMG_5134_derpfl.jpg", class: "card-img-top", alt: "Product Image", style: "max-height: 420px; width: 100%; margin-bottom: 10px;") %>
-
-                <div data-controller="favorite-heart" data-action="click->favorite-heart#toggleFavorite">
-                  <%= link_to '#', class: 'favorite-heart' do %>
-                    <i class="fa fa-heart-o" data-target="favorite-heart.heartIcon"></i>
-                  <% end %>
-                </div>
-
-                <div class="card-trip-infos">
-                  <div>
-                    <%= link_to "Gardelli", "#", class: "card-title", style: "text-decoration: none;" %>
-                    <p>Forlì FC, Italy</p>
-                  </div>
-                  <h2 class="card-trip-pricing">£19 (250gr)</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        <% end %>
+    <%= render "shared/product-card" %>
 
         <div class="col-12 mb-4">
           <div class="card">

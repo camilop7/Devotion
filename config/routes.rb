@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :farmers
 
   root to: "pages#home"
+
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'roasters', to: 'roasters#index'

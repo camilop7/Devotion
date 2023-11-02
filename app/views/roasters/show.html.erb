@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+  <%= render "shared/navbar" %>
+
+  <body>
+
+    <div class="container mt-5">
+      <div class="row">
+        <% @products.each do |product| %>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <%= image_tag(product.image_url || "https://res.cloudinary.com/difj9msh3/image/upload/v1698944424/IMG_5227_ckanmz.jpg", class: "card-img-top", alt: product.name, style: "height: 400px; width: 100%; object-fit: cover;") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= product.name %></h5>
+                <p class="card-text"><%= product.description %></p>
+                <p class="card-text"><strong>Price:</strong> <%= product.price %></p>
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">Save for Later</button>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+  </body>
+
+  <%= render "shared/footer" %>
+
+<html>

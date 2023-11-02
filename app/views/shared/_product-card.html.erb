@@ -1,17 +1,19 @@
-<div class="card-trip position-relative">
-  <%= image_tag("https://res.cloudinary.com/difj9msh3/image/upload/v1695482492/39C60CA7-7514-4A70-A751-6735BABE7A4C_mf3npu.jpg", class: "card-img-top", alt: "Product Image", width: 414, height: 276) %>
-
-  <div data-controller="favorite-heart" data-action="click->favorite-heart#toggleFavorite">
-    <%= link_to '#', class: 'favorite-heart' do %>
-      <i class="fa fa-heart-o" data-target="favorite-heart.heartIcon"></i>
-    <% end %>
-  </div>
-
-  <div class="card-trip-infos">
-    <div>
-      <%= link_to "Gardelli", "#", class: "card-title", style: "text-decoration: none;" %>
-      <p>Forlì FC, Italy</p>
+    <div class="row">
+      <% @roasters.each do |roaster| %>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <%= link_to roaster_path(roaster) do %>
+              <% if roaster.picture.present? %>
+                <%= image_tag(roaster.picture, class: "card-img-top", alt: roaster.name, style: "height: 400px; width: 100%; object-fit: cover;") %>
+              <% else %>
+                <%= image_tag("default_roaster_image.jpg", class: "card-img-top", alt: roaster.name, width: 414, height: 276) %>
+              <% end %>
+            <% end %>
+            <div class="card-body">
+              <h5 class="card-title"><%= roaster.name %></h5>
+              <p class="card-text"><%= roaster.description %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
-    <h2 class="card-trip-pricing">£19 (250gr)</h2>
-  </div>
-</div>
