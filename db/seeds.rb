@@ -35,8 +35,8 @@ end
 
 
 # Create Shops
-Shop.create(name: 'Angel', location: 'Location1', description: 'Description1', additional_info: 'Info1', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1698955714/angel_bhm2bs.jpg')
-Shop.create(name: 'Clenckerwell', location: 'Location2', description: 'Description2', additional_info: 'Info2', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1698956273/clenkerwell_zra5b1.webp')
+Shop.create(name: 'Angel', location: 'Location1', description: 'Description1', additional_info: 'Info1', location_link: 'https://www.google.com/maps/place/Devotion+Coffee+Angel/@51.5388352,-0.1016091,17z/data=!3m1!4b1!4m6!3m5!1s0x48761bad300a8539:0x8d83161841906c9c!8m2!3d51.5388319!4d-0.0990342!16s%2Fg%2F11j23z1mmn?entry=ttu', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1698955714/angel_bhm2bs.jpg')
+Shop.create(name: 'Clenckerwell', location: 'Location2', description: 'Description2', additional_info: 'Info2', location_link: 'https://www.google.com/maps/place/Devotion+Coffee+Clerkenwell/@51.5257879,-0.1129927,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b9bb1d559c3:0x19744d5843575ccd!8m2!3d51.5257846!4d-0.1104178!16s%2Fg%2F11khqd961j?entry=ttu', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/v1698956273/clenkerwell_zra5b1.webp')
 Shop.create(name: 'Virtual Shop', location: 'Location3', description: 'Description3', additional_info: 'Info3', picture: 'https://res.cloudinary.com/difj9msh3/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1695482492/IMG_5117_jhf5xe.jpg?_s=public-apps')
 
 # Create Farmers

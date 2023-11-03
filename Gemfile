@@ -58,6 +58,8 @@ gem "sassc-rails"
 
 gem 'jquery-rails'
 
+# gem 'geocoder'
+
 gem 'bootstrap', '~> 5.1.3'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
